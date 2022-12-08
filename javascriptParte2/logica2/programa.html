@@ -1,0 +1,35 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+
+
+	pincel.fillStyle = 'lightgrey'; // essa função serve para receber um atributo.
+
+	// a função fillRect(), recebe como parametro as cordenadas (x  e y), e o tamanho da tela, neste caso 600 de largura e 400 de altura (pixel).
+	pincel.fillRect(0, 0, 600, 400);
+
+	pincel.fillStyle = 'green';
+	pincel.fillRect(0, 0, 200, 400);
+
+	pincel.fillStyle = 'red';
+	pincel.fillRect(400, 0, 200, 400);
+
+	/*===================================================================================*/
+
+	pincel.fillStyle = 'yellow';
+	pincel.beginPath(); // essa função inicia a escrita (desenho/pintura) do caminho;
+	pincel.moveTo(300, 200); // a função moveTo serve para que o pincel pinte de acordo com as coordenadas recebidas.  
+
+	pincel.lineTo(200, 400); 
+	pincel.lineTo(400, 400);
+	pincel.fill(); // essa função faz com que o pincel preencha as coordenadas passadas.
+
+	pincel.fillStyle = 'blue';
+	pincel.beginPath();
+	pincel.arc(300, 200, 50, 0, 2 * 3.14);
+	pincel.fill();
+
+</script>

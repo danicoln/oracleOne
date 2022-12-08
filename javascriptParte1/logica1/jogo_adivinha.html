@@ -1,0 +1,51 @@
+<script> 
+
+	function pulaLinha(){
+
+		document.write("<br><hr><br>");
+	}
+
+	function mostra(frase){
+
+		document.write("<big>" + frase + "</big>");
+		pulaLinha();
+	}
+
+	function sorteia(n){
+
+		return Math.round(Math.random() * n);
+	
+	}
+
+	
+	var numeroPensado = sorteia(10);
+	console.log(numeroPensado);
+
+	var tentativas = 1;
+	
+		while(tentativas <= 3){
+
+			var chute = parseInt(prompt("Adivinhe um número!"));
+
+			if(chute == numeroPensado){
+
+				mostra("Você acertou!! O número pensado foi: " + numeroPensado);
+
+				break;
+			
+			}else if(chute < numeroPensado){ 
+			
+				mostra("Você errou! O número é maior que o digitado!");
+			
+			}else if(chute > numeroPensado){
+			
+				mostra("Você errou! O número é menor que o digitado!");
+			
+			}
+
+			tentativas++;
+	}
+
+	mostra("FIM");
+
+</script>

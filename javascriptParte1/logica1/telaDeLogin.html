@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var maximoTentativas = 3;
+    var tentativaAtual = 1;
+
+    while(tentativaAtual <= maximoTentativas) {
+
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+
+        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+            alert("Bem-vindo ao sistema, " + loginInformado);
+
+            tentativaAtual = maximoTentativas; // se acertamos, atribuímos o valor 3 para a variável de incremento tentativaAtual e quando o código volta para o início do loop o resultado será falso, fazendo com que o loop deixe de ser executado
+
+        } else {
+
+            if (tentativaAtual == 3) {
+                alert("Número permitido de tentativas ultrapassado!");
+            } else {
+                alert("Login inválido. Tente novamente");
+            }
+        }
+
+       // vai para a próxima tentativa
+        tentativaAtual++;  
+    }
+
+</script>

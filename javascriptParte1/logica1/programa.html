@@ -1,0 +1,48 @@
+
+
+
+<meta charset="UTF-8">
+
+<script>
+	// alula sobre variaveis e atribuições e outras funcionalidades.
+
+	// criando uma função sem parâmetros.
+	function pulaLinha(){
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(parametro){
+
+		document.write(parametro);
+		pulaLinha(); // uma função dentro de outra função!
+
+	}
+
+
+	var ano = 2030;
+
+	mostra("A idade do Lincoln é " + (ano - 1988) + " anos");
+
+
+	mostra("A idade do Antonio é " + (ano - 1977) + " anos");
+
+
+	mostra("A idade do Silvio é " + (ano - 1995) + " anos");
+
+
+	var idadeFlavio = 39;
+	var idadeJoaquim = 20;
+	var idadeBarney = 41;
+	var media = ((idadeFlavio + idadeJoaquim + idadeBarney)/3);
+
+	// o "Math.round" é uma função que arredonda o numero.
+
+	mostra("<br> A media das idades é: " + Math.round(media));
+
+	var nome = "Flavio";
+
+	mostra("<br> A idade de " + nome + " é " + idadeFlavio);
+
+	</script>

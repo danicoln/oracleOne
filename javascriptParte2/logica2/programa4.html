@@ -1,0 +1,49 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    //var raio = 10;
+
+
+    // uma forma de criar uma função, é inserir a função pensada e passar os paramentros ou o que fizer sentido, para depois criar a função.
+    function desenhaCirculo(x, y, raio) {
+
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpaTela(){
+
+        pincel.clearRect(0, 0, 600, 400); // apaga sempre a bolinha.
+    }
+
+    function exibeMsgConsole(){
+
+        console.log('Chamei função');
+    }
+
+    var x = 20;
+
+    function atualizaTela(){
+
+        limpaTela();
+        desenhaCirculo(x, 20 , 10);
+        x++;
+    }
+    
+    //Quando omitimos os "()" de uma função, chamamos de callback de programação. O método setInterval que ficará responsável por chamar a função atualizaTela().
+    setInterval(atualizaTela, 10);
+    
+    
+
+    
+
+</script>

@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br><hr><br>");
+
+	}
+
+	function mostra(parametro){
+		
+		document.write("<big>" + parametro + "</big>");
+		pulaLinha(); 
+
+	}
+
+	var mediaIdadeFilhos = 28;
+	var anoAtual = 2022;
+	var qtGeracoes = (anoAtual - 1500) / mediaIdadeFilhos;
+
+	
+	mostra(Math.round(qtGeracoes));
+
+</script>
