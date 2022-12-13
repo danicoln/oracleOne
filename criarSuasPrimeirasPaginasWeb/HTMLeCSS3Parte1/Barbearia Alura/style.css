@@ -1,24 +1,21 @@
-
-body{
-	
-}
+/* HTML5 e CSS3 parte 2: posicionamento, listas e navegação HTML5 e CSS3 parte 2: posicionamento, listas e navegação */
 
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
 }
 
-/*.home-Produtos-Contato{
+.caixa{
 	position: relative;
 	width: 940px;
 	margin: 0 auto;
 }
 
-nav {
+nav{
 	position: absolute;
 	top: 110;
 	right: 0;
-}*/
+}
 
 nav li{
 	display: inline;
@@ -26,7 +23,6 @@ nav li{
 	/*espaçamento externo: topo, direita, baixo e esquerda*/
 	margin: 0 0 0 15px;
 }
-
 
 nav a { 
 	text-transform: uppercase; /* aqui estamos alterando o comportamento visual do html, deixando tudo em maiúsculo */
@@ -36,6 +32,7 @@ nav a {
 	text-decoration: none; /*para tirar qualquer decoração do texto, neste caso, o sublinhado do link*/
 }
 
+/*o codigo abaixo é representado da frente pra trás, pela seguinte frase: o mouse estiver por cima dos links 'a' no menu de navegação 'nav'*/
 nav a:hover{
 
 	color: #C78C19;
@@ -43,59 +40,127 @@ nav a:hover{
 
 }
 
-#banner{
-	width: 100%; /*largura*/
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
 }
 
-/*A class serve para replicarmos a aplicação do nosso CSS, sem precisar copiar e colá-lo em vários elementos. Aplicamos a classe para isso.*/
-
-.principal{
-	background: #CCCCCC; /*cor*/
-	padding: 30px; /* espaçamento interno e os pixels */
-}
-
-.titulo-principal{
-	padding-left: 20px;
-}
-
-
-.titulo-centralizado {
+.produtos li{
+	display: inline-block;
 	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+		/*border-color: #000000;
+		border-width: 2px;
+		border-style: solid;*/
+	border: 2px solid #000000; /* esta linha faz todo o serviço das três linhas anteriores */
+	border-radius: 10px;
 }
 
-p{
+.produtos li:hover{
+	border-color: #C78C19;
+}
+
+.produtos li:active{
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+
+	font-size: 33px;
+
+}
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.produto-descricao{
+	font-size: 18px;
+}
+
+
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer{
 	text-align: center;
-
+	background: url("bg.jpg");
+	padding: 40px 0;
 }
 
-#missao{
-	font-size: 20px
+.copyright {
+	color:#FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
 }
 
-/*Todos os textos que estão dentro da tag 'em' e 'strong', serão modificados*/
-
-em strong {
-	color: #FF0000;
+main {
+	width: 940px;
+	margin: 0 auto;
 }
 
-/* para criar a referencia para classe, usamos o '.' */
-.itens{
-	font-style: italic;
+form{
+	margin: 40px 0;
 }
 
-.beneficios{
-	background: #FFFFFF; /*cor*/
-	padding: 20px; /* espaçamento interno e os pixels */
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
 }
 
-
-ul{
-	display: inline-block; /*inline-block ocupa o tamanho do conteúdo e permite mexer na largura e espaçamento*/
-	vertical-align: top; /*configuração do alinhamento do texto para parte de cima*/
-	width: 20%; /*largura*/
-	margin-right: 15%; /*configuração do espaçamento externo da margem à direita*/
+/*Para replicar a mesma coisa para outro elemento, fazemos isso usando a ',' e inserindo o outro elemento*/
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
 }
 
-.imagemBeneficios{
-	width: 50%; /*largura*/
+.checkbox{
+	margin: 20px 0;
 }
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all; /* este comando transition, faz a transição da cor de acordo com o tempo inserido */
+	cursor: pointer; /* com o comando cursor, você pode alterar a seta do mouse, neste caso, pela mãozinha */
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table{
+	margin: 20px 40px;
+}
+
+thead{
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th{
+	border: 1px solid #000000;
+	padding: 8px 15px ;
+}
+

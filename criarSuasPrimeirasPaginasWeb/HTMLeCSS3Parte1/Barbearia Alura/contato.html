@@ -1,0 +1,129 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css"> <!-- este arquivo é uma configuração que a comunidade criou que serve para limar tudo o que o navegador faz. O link tem que seguir a ordem em primeiro lugar-->
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header> <!-- cabeçalho --> 
+			<div class="caixa">
+				<h1><img src="logo.png"alt="Logo da Barbearia Alura"></h1> 
+
+				<nav> <!-- para não precisar usar uma classe de 'navegacao'na ul, usamos a tag "<nav>" navegacao e configuramos as propriedades de display no CSS -->
+					
+					<ul> <!-- lista não ordenada -->
+
+						<!-- a tag '<a>' serve como ancora, transforma em link
+							dentro da tag, precisa dizer pra onde o link vai levar, sendo assim, informar o endereço de referencia ("href=") que é o nome do arquivo, neste caso "index.html".--> 
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos </a></li>
+						<li><a href="contato.html">Contato</a></li>
+
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+
+		<main>
+
+			<form> <!-- Dentro do formulário, é usado sempre uma etiqueta para o input. Sempre é usado esse par de tag 'label' e seguida de 'input' (par de informações)-->
+				<label for="nomeSobrenome"> Nome e sobrenome </label>
+				<input type="text" id="nomeSobrenome" class="input-padrao" required> <!-- a palavra "required" é uma função que faz com que torne o campo obrigatório-->
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone"class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+
+				<label for="mensagem"> Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem"class="input-padrao" required> </textarea>
+
+				<fieldset> <!--quando temos varios campos para preenchimento, usamos a tag fieldset ao invés de div. E dentro de um fieldset não tem 'p' e sim a tag 'legend'-->
+					<legend class="teste" id="teste"> <!--style="color: purple">--> Como prefere o contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+					
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+						
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+					
+				</fieldset>
+
+				<!-- inserção da caixa de opções-->
+				<fieldset>
+					<legend>Qual o horário prefere ser atendido?</legend>
+					<select> <!-- A estrutura da tag select é composta de um ou mais tag option  -->
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+
+				<label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+
+					<!-- Este input abaixo, serve para enviar os dados cadastrados para o servidor etc-->
+				<input type="submit" value="Enviar formulário" class="enviar">
+
+			</form>
+
+			<table> <!-- dentro da tabela usamos tags específicas e é dividida em 3 partes-->
+
+
+				<thead>
+				
+					<tr> <!-- uma linha é table row-->
+						<th>Dia</th> <!-- célula --> 
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>08h - 20h</td>
+					</tr>
+						
+					<tr>
+						<td>Quarta</td>
+						<td>08h - 20h</td>
+					</tr>
+						
+					<tr>
+						<td>Sexta</td>
+						<td>08h - 20h</td>
+					</tr>
+
+					<!--exemplo do colspan.
+					<tr> 
+    				<td colspan="2">Rio de Janeiro</td> 
+					</tr> -->
+
+				</tbody>
+					
+
+
+			</table>
+
+		</main>
+
+
+
+		<footer> <!--tag do rodapé -->
+			<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+
+
+		</footer>
+
+
+	</body>
+
+</html>
