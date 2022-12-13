@@ -1,0 +1,34 @@
+/*
+abcdef...
+
+binario 01
+
+numérico 0123456789
+hexadecimal 0123456789ABCDEF
+
+RGB = Red Green Blue
+
+#_ _ _ _ _ _
+
+
+0 = ausência de cor
+
+F = máximo de cor
+
+#000000 = PRETO
+	
+# FFFFFF = BRANCO
+
+#FF0000 = VERMELHO
+
+RGB = 0, 1, 2, 3 ... 255
+
+0 = ausencia
+
+255 = máximo
+
+representação no css = rgb(255, 255, 255)
+
+na cor azul = rgb(0, 0, 255)
+
+*/

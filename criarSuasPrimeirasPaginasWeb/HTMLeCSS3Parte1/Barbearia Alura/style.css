@@ -1,0 +1,101 @@
+
+body{
+	
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+/*.home-Produtos-Contato{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110;
+	right: 0;
+}*/
+
+nav li{
+	display: inline;
+
+	/*espaçamento externo: topo, direita, baixo e esquerda*/
+	margin: 0 0 0 15px;
+}
+
+
+nav a { 
+	text-transform: uppercase; /* aqui estamos alterando o comportamento visual do html, deixando tudo em maiúsculo */
+	color: #000000; /*para definir a cor do texto*/
+	font-weight: bolder; /*para deixar o texto em negrito*/
+	font-size: 22px; /*para alterar o tamanho do texto*/
+	text-decoration: none; /*para tirar qualquer decoração do texto, neste caso, o sublinhado do link*/
+}
+
+nav a:hover{
+
+	color: #C78C19;
+	text-decoration: underline;
+
+}
+
+#banner{
+	width: 100%; /*largura*/
+}
+
+/*A class serve para replicarmos a aplicação do nosso CSS, sem precisar copiar e colá-lo em vários elementos. Aplicamos a classe para isso.*/
+
+.principal{
+	background: #CCCCCC; /*cor*/
+	padding: 30px; /* espaçamento interno e os pixels */
+}
+
+.titulo-principal{
+	padding-left: 20px;
+}
+
+
+.titulo-centralizado {
+	text-align: center;
+}
+
+p{
+	text-align: center;
+
+}
+
+#missao{
+	font-size: 20px
+}
+
+/*Todos os textos que estão dentro da tag 'em' e 'strong', serão modificados*/
+
+em strong {
+	color: #FF0000;
+}
+
+/* para criar a referencia para classe, usamos o '.' */
+.itens{
+	font-style: italic;
+}
+
+.beneficios{
+	background: #FFFFFF; /*cor*/
+	padding: 20px; /* espaçamento interno e os pixels */
+}
+
+
+ul{
+	display: inline-block; /*inline-block ocupa o tamanho do conteúdo e permite mexer na largura e espaçamento*/
+	vertical-align: top; /*configuração do alinhamento do texto para parte de cima*/
+	width: 20%; /*largura*/
+	margin-right: 15%; /*configuração do espaçamento externo da margem à direita*/
+}
+
+.imagemBeneficios{
+	width: 50%; /*largura*/
+}

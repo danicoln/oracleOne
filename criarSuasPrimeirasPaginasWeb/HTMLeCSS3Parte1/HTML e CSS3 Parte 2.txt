@@ -1,0 +1,81 @@
+Aula 1 - Criando uma nova pagina
+
+Nesta aula, vimos:
+
+Uma introdução ao projeto do treinamento
+Uma revisão do conteúdo aprendido no treinamento anterior
+Uma revisão da base de uma página HTML
+Lista HTML não ordenada
+
+
+Aula 2 - Navegação entre páginas
+Nesta aula, aprendemos:
+
+A criar links para outras páginas, sejam elas do nosso projeto ou páginas externas
+Um reforço aos estilos inline e block
+Como transformar o texto para ter todas as letras maiúsculas
+Como deixar o texto em negrito com CSS
+Como remover a decoração do texto
+
+Aula 3 -Posicionamento dos elementos
+
+position: static = com esta posição nada vai mudar, é o valor inicial
+
+position: relative = Se quiser mudar o ponto inicial pra uma nova posição relativa a inicial. Toda configuração que fizer da vertical ou horizontal, será relativo ao ponto inicial.
+
+position: absolute = Serve para mudar a posição do ponto inicial que ele se encontra. O dev consegue posicionar o elemento em qualquer lugar da página.
+
+A melhor técnica para alinhar uma <div> ao centro é  usar o cálculo da 'margin' automático, que vai delegar para o navegador fazer a conta de calcular a largura que resta, dividir por dois, e adicionar metade em cada um dos lados.
+
+
+Nesta aula, aprendemos:
+
+Como remover os estilos que o navegador cria automaticamente
+Como funciona os posicionamentos static, relative e absolute dos elementos
+Como posicionar o cabeçalho da nossa página
+
+display: inline-block:   Um elemento que tem seu display com o valor inline-block, se comporta com o tamanho de seu conteúdo, mas regulável. O tamanho pode ser ajustado, tanto na largura, quanto na altura.
+
+
+Nesta aula, aprendemos:
+
+A tag main, para o conteúdo principal da nossa página
+A criar listas complexas, com títulos, imagens e parágrafos
+A utilizar o inline-block
+A praticar e estilizar o conteúdo principal da nossa página
+
+
+Nesta aula, aprendemos:
+
+Através do CSS, aplicar bordas nos elementos.
+Os diferentes tipos de bordas.
+A deixar a borda arredondada.
+
+Nesta aula, aprendemos:
+
+Algumas pseudo-classes CSS
+hover, quando o usuário passa o cursor sobre o elemento
+active, quando um elemento está sendo ativado pelo usuário
+A mudar a cor do texto e/ou da borda de um elemento, quando o usuário passar o cursor sobre o mesmo
+A mudar a cor da borda de um elemento, quando o mesmo estiver sendo ativado pelo usuário
+
+Para adicionar uma imagem de fundo em um elemento, basta inserir o valor url no background do elemento. 
+No CSS, ao referenciarmos o endereço de uma imagem, usamos o valor url.
+
+Nesta aula, aprendemos:
+
+A tag footer, para o rodapé da nossa página
+Que, com CSS, podemos colocar uma imagem de fundo em um elemento
+Quando colocamos uma imagem de fundo em um elemento, o CSS, por padrão, copia e cola a imagem diversas vezes até ocupar todo o espaço do elemento
+A tabela Unicode.
+
+
+
+EXERCICIO:
+
+Acertar a home e colocar o link para a pagina de produtos
+Colocar os links igual da pagina de produtos
+
+
+
+

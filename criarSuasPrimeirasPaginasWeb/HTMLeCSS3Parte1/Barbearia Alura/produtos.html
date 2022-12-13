@@ -1,0 +1,66 @@
+<!-- HTML5 e CSS3 parte 2: posicionamento, listas e navegação HTML5 e CSS3 parte 2: posicionamento, listas e navegação-->
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css"> <!-- este arquivo é uma configuração que a comunidade criou que serve para limar tudo o que o navegador faz. O link tem que seguir a ordem em primeiro lugar-->
+
+		<link rel="stylesheet" href="produtos.css">
+	</head>
+	<body>
+		<header> <!-- cabeçalho --> 
+			<div class="caixa">
+				<h1><img src="logo.png"></h1> 
+
+				<nav> <!-- para não precisar usar uma classe de 'navegacao'na ul, usamos a tag "<nav>" navegacao e configuramos as propriedades de display no CSS -->
+					
+					<ul> <!-- lista não ordenada -->
+
+						<!-- a tag '<a>' serve como ancora, transforma em link
+							dentro da tag, precisa dizer pra onde o link vai levar, sendo assim, informar o endereço de referencia ("href=") que é o nome do arquivo, neste caso "index.html".--> 
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos </a></li>
+						<li><a href="contato.html">Contato</a></li>
+
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+
+		<main> <!-- nesta estrutura é inserido o principal do site, neste caso os produtos -->
+			<ul class="produtos">
+				<li>
+					<h2>Cabelo</h2>
+					<img src="cabelo.jpg">
+					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produto-preco">R$ 25,00</p>
+				</li>
+				<li>
+					<h2>Barba</h2>
+					<img src="barba.jpg">
+					<p class="produto-descricao">Corte profissional de barba</p>
+					<p class="produto-preco">R$ 18,00</p>
+				</li>
+				<li>
+					<h2>Cabelo + Barba</h2>
+					<img src="cabelo+barba.jpg">
+					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produto-preco">R$ 35,00</p>
+				</li>
+			</ul>
+		</main>
+
+		<footer> <!--tag do rodapé -->
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+
+
+		</footer>
+
+
+	</body>
+
+</html>
