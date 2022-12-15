@@ -1,5 +1,12 @@
 /* HTML5 e CSS3 parte 2: posicionamento, listas e navegação HTML5 e CSS3 parte 2: posicionamento, listas e navegação */
 
+body{
+	font-family: 'Noto Serif', serif;	/*Este codigo foi retirado do site:
+	https://fonts.google.com/specimen/Montserrat?preview.text=Barbearia%20Alura&preview.text_type=custom&query=monts
+	*/
+}
+
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
@@ -105,8 +112,7 @@ footer{
 }
 
 main {
-	width: 940px;
-	margin: 0 auto;
+	
 }
 
 form{
@@ -162,5 +168,142 @@ thead{
 td, th{
 	border: 1px solid #000000;
 	padding: 8px 15px ;
+}
+
+/* css da pagina inicial */
+
+.banner{
+	width: 100%;
+}
+
+.titulo-principal{
+
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	/*text-shadow: 10px 10px 10px black;
+
+	/*usamos a opacidade em cores
+	a função rgba tem a camada alfa, e além das cores,
+	 passamos como parametro a opacidade
+	 color: rgba(0, 0, 0, 0.3);*/
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	font-weight: bold ;
+}
+
+.principal em{
+	font-style: italic;
+}
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0; /*cima, direita, baixo, esquerda*/
+}
+
+.mapa{
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+
+}
+
+.mapa p{
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.mapa-conteudo {
+	width: 940px; /*largura*/
+	margin: 0 auto;
+
+}
+
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+	/*box-shadow: inset 0 0 30px #FF0000;*/
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens{
+	line-height: 1.5; /* mexe no espaçamento entre as linhas 1 pra x tamanho da fonte e .5 para 50% */
+}
+
+.itens:first-child{ /*pseudo-elementos*/
+	font-weight: bold;
+
+}
+
+.itens:before{
+	content: "✦ ";
+}
+
+
+.imagem-beneficios{
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000; 
+	/*sombra na caixa nos paramentros x, y , cor
+	Temos a possibilidade ainda de adicionar uma terceira propriedade, 
+	que é o grau de espalhamento desta sombra (x y transição, grau, cor) */
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+.video{
+	width: 560px;
+	margin: 2em auto;
+}
+
+/*o codigo abaixo tem que ser exatamente como esta, com espaços (@media screen and ().).*/
+@media screen and (max-width: 480px){ 
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	.lista-beneficios{
+		width: 100%;
+
+	}
+
+	 .imagem-beneficios{
+	 	width: 85%;
+	 	margin: 20px;
+	 }
 }
 

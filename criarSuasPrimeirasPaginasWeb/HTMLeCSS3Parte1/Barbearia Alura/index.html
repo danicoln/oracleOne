@@ -1,72 +1,102 @@
-<!DOCTYPE html> <!--// a tag DOCTYPE por padrão tem que estar em letras maiúsculas, e ainda seguida por 'html', pra indicar ao navegador que estamos usando a última versão do html. Outro detalhe é o sinal '!', que serve para que a tag seja identificada como DOCTYPE e qual a versão do html. -->
+<!DOCTYPE html> 
 
-<html lang="pt-br"> <!--// a tag 'html' é uma tag estrutural de conteudo, e precisa finalizar ao final do conteúdo. -->
-
-
-
-	<!-- O html é dividido em 2 partes. A primeira é a tag 'head' (cabeça) e a segunda a tag 'body' (corpo).
-		O head são as informações que estamos passando para o navegador, e o body, são as informações que estamos passando para o corpo do navegador (exibir na página) --> 
+<html lang="pt-br">  
 	<head> 
 		<meta charset="UTF-8">
-		<title> Barbearia Alura</title> <!-- Essa tag serve para que o titulo fique na aba do navegador-->
-
-		<!-- No linke abaixo. Temos a possibilidade de colocar um add externo ao html (que é o mais usado), onde no arquivo externo, terá todo o css que poderá aplicar em várias paginas para o uso do mesmo estilo-->
-		<link rel="stylesheet" href= "style-home.css">
-
-		<!-- possibilidade de colocar a tag 'style' em que tudo o que for inserido de config, será aplicado na página inteira -->
-		<!--<style>
-			
-		</style> -->
-
+		<meta name="viewport" content="width=device-width"
+		<title> Barbearia Alura</title> 
+			<link rel="stylesheet" href="reset.css"> 
+			<link rel="stylesheet" href="style.css">
+			<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+			<!--Este codigo foi retirado do site:
+	https://fonts.google.com/specimen/Montserrat?preview.text=Barbearia%20Alura&preview.text_type=custom&query=monts
+	-->
 	</head>
+
 	<body>
-
 		<!-- cabeçalho na PÁGINA-->
-		<header>
-			<div class="home-Produtos-Contato">
-				<h1 class="titulo-principal">Barbearia Alura</h1>
-			
-				<img id="banner" src="banner.jpg">
+		<header> <!-- cabeçalho --> 
+			<div class="caixa">
+				<h1><img src="logo.png"></h1> 
 
-				<nav> <!-- TIRADO DE PRODUTOS.HTML -->
-						
-						<ul> <!-- lista não ordenada -->
+				<nav> <!-- para não precisar usar uma classe de 'navegacao'na ul, usamos a tag "<nav>" navegacao e configuramos as propriedades de display no CSS -->
+					
+					<ul> <!-- lista não ordenada -->
 
-							<li><a href="index.html">Home</a></li>
-							<li><a href="produtos.html">Produtos </a></li>
-							<li><a href="contato.html">Contato</a></li>
+						<!-- a tag '<a>' serve como ancora, transforma em link
+							dentro da tag, precisa dizer pra onde o link vai levar, sendo assim, informar o endereço de referencia ("href=") que é o nome do arquivo, neste caso "index.html".--> 
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos </a></li>
+						<li><a href="contato.html">Contato</a></li>
 
-						</ul>
+					</ul>
 				</nav>
 			</div>
-		</header>
 
-		<div class="principal">
+			<!-- quando o assunto é estilo, usa-se uma classe. Quando é sobre comportamento, usa-se um id. -->
 
-			<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+		<img class="banner" src="banner.jpg">
 
-		<p >Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+		<main>
 
-		<!-- css inline, css na mesma linha--> 
-		<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+			<!-- Para um bloco onde o conteúdo tenha o mesmo significado, o mesmo sentido, usamos uma <section>.-->
 
-		<p style="">Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+			<section class="principal">
 
-	</div>
-		<!-- A class serve para replicarmos a aplicação do nosso CSS, sem precisar copiar e colá-lo em vários elementos. Aplicamos a classe para isso.-->
-		<div class="beneficios">
-			<h3 class="titulo-centralizado">Benefícios</h3>
+				<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
 
-			<!-- listas não ordenadas tag 'ul' e ordenadas tag 'ol' -->
+				<img class="utensilios" src="utensilios.jpg" alt="Utensílios de um barbeiro.">
 
-			<ul>
-				<li class="itens">Atendimento aos Clientes</li>
-				<li class="itens">Espaço diferenciado</li>
-				<li class="itens">Localização</li>
-				<li class="itens">Profissionais Qualificados</li>
-			</ul>
+			<p >Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-			<img src="beneficios.jpg" class="imagemBeneficios">
-		</div>
+			<!-- css inline, css na mesma linha--> 
+			<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+			<p style="">Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+
+		</section>
+
+			<section class="mapa">
+				<h3 class="titulo-principal">Nosso estabelecimento</h3>
+				<p>Nosso estabelecimento está localizado no coração do interior</p>
+				<div class="mapa-conteudo">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29254.23518697912!2d-46.65953394947929!3d-23.576365185795513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salura%20sao%20paulo!5e0!3m2!1spt-BR!2sbr!4v1671055667038!5m2!1spt-BR!2sbr" width=100% height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+
+			</section>
+			
+			<section class="beneficios">
+				<h3 class="titulo-principal">Benefícios</h3>
+
+				<div class="conteudo-beneficios">
+					<!-- listas não ordenadas tag 'ul' e ordenadas tag 'ol' -->
+
+					<ul class="lista-beneficios">
+						<li class="itens">Atendimento aos Clientes</li>
+						<li class="itens">Espaço diferenciado</li>
+						<li class="itens">Localização</li>
+						<li class="itens">Profissionais Qualificados</li>
+						<li class="itens">Pontualidade</li>
+						<li class="itens">Limpeza</li>
+					</ul><img src="beneficios.jpg" class="imagem-beneficios"> <!-- tem um detalhe que interfere na página que é os espaços entre tags. Aqui depois de </ul> é necessário que a tag da imagem fique logo em seguida. Quando estamos usando o "inline-block" e queremos usar 100% da largura. Estes elementos precisam estar um do lado do outro para que não reflita na nossa página-->
+				</div>
+
+
+				<div class="video">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+			</section>
+
+		</main>
+
+
+
+		<footer> <!--tag do rodapé -->
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+
+
+		</footer>
 	</body>
 </html>

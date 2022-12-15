@@ -1,0 +1,138 @@
+Entrar na UNIP - agendar prova
+
+
+
+Tanto o float:left quanto o float: right servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele
+
+Nesta aula, aprendemos:
+
+A ajustar a página principal para utilizar os mesmos padrões da página de produtos
+Medidas proporcionais com CSS
+Como funciona a flutuação dos elementos e como modificá-la, com a propriedade float do CSS
+Como limpar o float, com a propriedade clear do CSS
+
+
+==========================================================================
+
+Usando fonte externas
+
+
+Trabalhando com mapas
+
+<section class="mapa">
+<h3 class="titulo-principal">Nosso estabelecimento</h3>
+<p>Nosso estabelecimento está localizado no coração do interior</p>
+</section>
+
+Nesta aula, aprendemos:
+
+A utilizar fontes externas nas nossas páginas
+Como incorporar um mapa à nossa página
+Como incorporar um vídeo à nossa página
+
+pseudo-classes / elementos
+
+ex:
+.itens: first-child{
+}
+
+na aula o professor ensinou um pouco sobre o pseudo-elemento :
+first-child, que trata o primeiro elemento da lista;
+last-child, que trata o último elemento da lista;
+nth-child(), que trata o elemento de acordo com a posição passada como parametro;
+
+Aplicando gradiente
+ex:
+background: radial-gradient( orange, blue, red, black);
+
+o radial-gradient é para cores no formato redondo
+linear-gradient é para cores gradiente no formato normal.
+
+Da para inserir várias cores passando por parâmetro e ainda mudar a inclinação das cores. Por exemplo:
+
+background: linear-gradient( 45deg, orange, blue, red, black);
+
+Dá tambem de subdividir as cores inserindo valores. Por exemplo:
+background: linear-gradient( orange 0, blue 25%, red 50%, pink 75%);
+
+
+PSEUDO-ELEMENTOS
+
+Nesta aula, aprendemos:
+
+A melhorar mais ainda a semântica da página principal, com novas divisões, classes, etc
+Novas pseudo-classes
+Como aplicar um background gradiente na página
+Pseudo-elementos
+
+
+Seletor de elemento avançado:
+
+
+/*Seletores avançados*/
+main > p{ /*filho direto da main*/
+	background: red;
+}
+
+img + p { /*paragrafo irmão*/
+	background: blue;
+}
+
+img ~ p{ /* este ~ faz com que altere todos os parágrafos depois de cada imagem */
+	background: yellow;
+}
+
+.principal p:not(#missao){
+	background: orange;
+}
+
+
+Usando essa estrutura:
+
+<h2>
+<section>
+    <h2>
+    <p>
+    </p>
+    <h2>
+
+Como fazemos para selecionar o último <h2>?
+
+R: section > p + h2
+
+O último h2 é filho direto da section e irmão do p
+
+
+Nesta aula, aprendemos:
+
+Seletores avançados CSS
+Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+main > p {
+}COPIAR CÓDIGO
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+img + p {
+}COPIAR CÓDIGO
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+img ~ p {
+}COPIAR CÓDIGO
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+main p:not(#missao) {
+}COPIAR CÓDIGO
+Como fazer contas com CSS, com a propriedade calc
+
+
+
+box-shadow: 10px 10px 30px 20px #000000,  -10px -10px yellow, -20px 20px
+
+Nesta aula, aprendemos:
+
+Como manipular a opacidade dos elementos, com a propriedade CSS opacity
+Como manipular a opacidade das cores
+Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow
+Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow
+
+Nesta aula, aprendemos:
+
+Design responsivo: como ajustar o estilo da nossa página de acordo com o tamanho da tela do dispositivo que a acesse
+Meta tag de Viewport
+Media Queries
