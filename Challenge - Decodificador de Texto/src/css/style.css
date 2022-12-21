@@ -2,6 +2,11 @@
 body{
 	font-family: 'Mukta', sans-serif;
 	background: #E5E5E5;
+	margin: 10px 10px 10px 10px;
+}
+
+.logo{
+	padding: 10px 100px 0 0;
 }
 
 header img{
@@ -11,24 +16,21 @@ header img{
 	position: absolute;
 }
 
-p{
-	font-size: 16px;
-	display: block;
-}
-
 div p{
 	text-align: left;
-	display: inline-block;
+	display: inline;
+	padding: 30px 21px 30px 20px;
+
 }
 
 
 div h1{
 	font-family: 'Rubik Vinyl', cursive;
 	text-align: center;
-	width: 30;
-	height: 46;
-	top: 24;
+	height: 46px;
+	top: 24px;
 	left: 8px;
+	display: inherit;
 }
 div h2{
 	
@@ -39,8 +41,9 @@ div h2{
 	color: #495057;
 	opacity: 0.8;
 
-
 }
+
+
 
 section h2{
 	text-align: left;
@@ -60,25 +63,36 @@ form{
 	margin: 40px 0;
 }
 
-form label{
+label{
+	margin: 20px 10px 10px 10px;
 	display: block;
 	font-size: 20px;
+	text-align: left;
 
 }
 
-/*Ver como colocar a caixa de texto à esquerda OU arrumar os textos*/
 
-section textarea{
+textarea{
 	display: inline;
-	padding: 0%;
-	margin: 0% 0% 0px;
+	padding: 5px 5px 10px 10px;
 	background: lightgrey;
 
 }
 
+textarea.msg{
+	margin: 0px 30px 5px 0px;
+}
+
+.secaoTexto{
+	text-align: center;
+	display:inline;
+	
+}
+
+
 #msgCripto{
-	display: inline-block; 
-	position: absolute;
+	
+	display:flex; 
 	width: 680px;
 	height: 288px;
 	top: 168px;
@@ -90,13 +104,13 @@ section textarea{
 	font-size: 32px;
 	line-height: 150%;
 	color: #0A3871;
-	
 
 }
 
 /*Rectangle1*/
 #msgSaida{
 position: absolute;
+margin: 20px;
 width: 336px;
 height: 781px;
 left: 1032px;
@@ -112,31 +126,21 @@ border-radius: 25px;
 }
 
 
-button{
+
+
+.codificar{
 	text-align: center;
 	width: 343;
 	height: 624;
 	top: 152;
 	left: 16px;
 	font-size: 20px;
-	display: block;
-	margin: 0 1.1% 1%;
-}
-
-footer{
-	
-}
-
-
-
-.secaoTexto{
-	text-align: center;
 	display: inline;
-}
 
-div button{
 	width: 175px;
-	padding: 0.5% 0;
+	/* padding: 0.5% 0;*/ 
+	padding: 0.5% 0.5% 0.5% 0.5%;
+	margin: 10px 10px 10px 10px;
 	background: #526BC3;
 	color: white;
 	font-weight: bolder;
@@ -147,14 +151,80 @@ div button{
 	cursor: pointer;
 }
 
+.decodificar{
+	text-align: center;
+	width: 343;
+	height: 624;
+	top: 152;
+	left: 16px;
+	font-size: 20px;
+	display: inline;
+
+	width: 175px;
+	/* padding: 0.5% 0;*/ 
+	padding: 0.5% 0.5% 0.5% 0.5%;
+	margin: 10px 10px 10px 10px;
+	background: #526BC3;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.input-text{
+	margin: 20px 10px 20px 0px;
+}
+
+div.buttons{
+	margin: 0 50% 0 0;
+}
+
 div button:hover{
 	background: #0C3FFF;
 	transform: scale(1.1);
 }
 
+
+
 .footer{
 	background: #526BC3;
-	margin: 22% 0 0;
+	margin: 50% 0 0 0;
 
 }
 
+.copiar{
+	/* Button */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+padding: 20px 10px 10px 135px;
+margin: 25px 10px 10px 30px;
+
+position: absolute;
+width: 336px;
+height: 67px;
+left: 1032px;
+top: 790px;
+
+text-align: center;
+font-weight: bolder;
+font-size: 18px;
+
+/* Dark blue/dark-blue-300 */
+
+transition: 1s all;
+cursor: pointer;
+border: 1px solid #0A3871;
+border-radius: 24px;
+}
