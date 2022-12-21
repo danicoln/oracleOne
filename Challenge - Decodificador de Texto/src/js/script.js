@@ -2,7 +2,7 @@
 		const inputText = document.querySelector('.input-text');
 		const msg = document.querySelector('.msg');
 		const textSaida = document.querySelector('.texto-saida');
-		//const botaoCopiar = document.querySelector('#botaoCopiar');
+		const botaoCopiar = document.querySelector('#botaoCopiar');
 
 		
 
@@ -63,3 +63,14 @@
 
 			return textDesencript;
 		}
+
+		/*
+		function copiar(){
+			var copiaConteudo = msg;
+			copiaConteudo.select();
+			document.execComand('copy');
+			alert('Use o Ctrl + V', para colar o texto);
+		}*/
+
+
+		
