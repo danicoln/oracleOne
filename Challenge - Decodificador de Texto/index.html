@@ -8,7 +8,6 @@
 			<!-- <link rel="stylesheet" href="src/css/reset.css"> -->
 			<link rel="stylesheet" href="src/css/style.css">
 
-			
 			<link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
 			
@@ -22,7 +21,8 @@
 				<h1> Mensagem secreta </h1><br>
 
 				<p><strong>Esta página se refere ao challenge proposto pelo Programa One</strong>.</p> 
-				<p>Abaixo, você vai precisar inserir os dados a serem decodificados e clicar no botão "Decodificar" para descriptografar o texto!</p>
+
+				<p><br>Abaixo, você vai precisar inserir os dados a serem decodificados e clicar no botão "Decodificar" para descriptografar o texto!</p>
 			</div>
 
 		</header>
@@ -30,11 +30,13 @@
 
 		<main>
 			<section class="secaoTexto">
-				<div class="frame1">
-					<h2>Inserir apenas letras minúsculas e sem acentos</h2>
-				</div>
+
 				<label for="msgCripto"> Insira o texto a ser criptografado:</label>
 				<textarea class="input-text" cols= "50%" rows="15%" id="msgCripto"> </textarea>
+
+				<div class="frame1">
+					<h2>* Inserir apenas letras minúsculas e sem acentos</h2>
+				</div>
 
 				<div class="buttons">
 					<button class="codificar" onclick="buttonCriptografar()">Codificar 
@@ -50,10 +52,11 @@
 			<section class="secaoMsgSaida">
 				
 				<!-- <label for="msgSaida"> Insira o texto a ser descriptografado:</label> -->
-				<textarea class="msg" cols= "50%" rows="15%" id="msgSaida"> </textarea>
+				
+				<textarea class="msg" cols="20%" rows="8%" id="msgSaida"> </textarea>
+				<button class="copiar" onclick="copiar()">Copiar</button>
+				
 				<div class="texto-saida">
-	
-				 
 					<h3>Não foi encontrada nenhuma mensagem, tente novamente</h3>
 					<p>Informe o texto que você deseja criptografar ou descriptografar</p>
 				</div>
