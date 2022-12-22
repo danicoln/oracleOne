@@ -1,8 +1,8 @@
 
-		const inputText = document.querySelector('.input-text');
+		const inputText = document.querySelector('#msgCripto');
 		const msg = document.querySelector('.msg');
 		const textSaida = document.querySelector('.texto-saida');
-		const botaoCopiar = document.querySelector('#botaoCopiar');
+		const botaoCopiar = document.querySelector('#msgSaida');
 
 		
 
@@ -22,11 +22,11 @@
 		}
 
 		function encriptar(textoCriptografado){
-			var arrayCodigos = [["a","ai"], ["e","enter"], ["i","imes"], ["o","ober"], ["u", "ufat"], ["aimes", "ai"]];
+			let arrayCodigos = [["a","ai"], ["e","enter"], ["i","imes"], ["o","ober"], ["u", "ufat"], ["aimes", "ai"]];
 			
 			textoCriptografado = textoCriptografado.toLowerCase();
 
-			for(var i = 0; i < arrayCodigos.length; i++){
+			for(let i = 0; i < arrayCodigos.length; i++){
 				if(textoCriptografado.includes(arrayCodigos[i][0])){
 					textoCriptografado = textoCriptografado.replaceAll(arrayCodigos[i][0], arrayCodigos[i][1]);
 				}
@@ -51,11 +51,11 @@
 
 
 		function desencriptar(textDesencript){
-			var arrayCodigos = [["a","ai"], ["aimes", "ai"], ["e","enter"], ["i","imes"], ["o","ober"], ["u", "ufat"]];
+			let arrayCodigos = [["a","ai"], ["aimes", "ai"], ["e","enter"], ["i","imes"], ["o","ober"], ["u", "ufat"]];
 
 			textDesencript = textDesencript.toLowerCase();
 
-			for(var i = 0; i < arrayCodigos.length; i++){
+			for(let i = 0; i < arrayCodigos.length; i++){
 				if(textDesencript.includes(arrayCodigos[i][1])){
 					textDesencript = textDesencript.replaceAll(arrayCodigos[i][1], arrayCodigos[i][0]);
 				}
@@ -66,7 +66,7 @@
 
 		/*
 		function copiar(){
-			var copiaConteudo = msg;
+			let copiaConteudo = msg;
 			copiaConteudo.select();
 			document.execComand('copy');
 			alert('Use o Ctrl + V', para colar o texto);
