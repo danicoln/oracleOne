@@ -17,7 +17,7 @@
 			msg.value = textoEncriptado;
 			textSaida.style.display = 'none';
 			msg.style.color="red";
-			//botaoCopiar.style.display='block';
+			botaoCopiar.style.display='block';
 
 		}
 
@@ -64,13 +64,12 @@
 			return textDesencript;
 		}
 
-		/*
+	
 		function copiar(){
-			let copiaConteudo = msg;
-			copiaConteudo.select();
-			document.execComand('copy');
-			alert('Use o Ctrl + V', para colar o texto);
-		}*/
+		
+			navigator.clipboard.writeText(msg);
+			
+		}
 
 
 		
