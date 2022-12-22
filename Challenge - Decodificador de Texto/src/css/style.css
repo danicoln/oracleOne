@@ -2,11 +2,12 @@
 body{
 	font-family: 'Mukta', sans-serif;
 	background: #E5E5E5;
-	margin: 10px 10px 10px 10px;
+	
 }
 
-.logo{
-	padding: 10px 100px 0 0;
+.cabecalho-logo{
+	margin: 10px 10px 10px 10px;
+	padding: 10px 100px 60px 0;
 }
 
 header img{
@@ -16,16 +17,21 @@ header img{
 	position: absolute;
 }
 
-div p{
+p strong{
 	text-align: left;
 	display: inline;
 	padding: 30px 21px 30px 20px;
 
 }
 
+div p{
+	margin: 10px 10px;
+	padding: 10px 10px;
+}
+
 
 div h1{
-	font-family: 'Rubik Vinyl', cursive;
+	/* font-family: 'Rubik Vinyl', cursive; */
 	text-align: center;
 	height: 46px;
 	top: 24px;
@@ -72,17 +78,6 @@ label{
 }
 
 
-textarea{
-	display: inline;
-	padding: 5px 5px 10px 10px;
-	background: lightgrey;
-
-}
-
-textarea.msg{
-	margin: 0px 30px 5px 0px;
-}
-
 .secaoTexto{
 	text-align: center;
 	display:inline;
@@ -90,40 +85,60 @@ textarea.msg{
 }
 
 
-#msgCripto{
+.msgCripto{
 	
+	border: none;
 	display:flex; 
 	width: 680px;
 	height: 288px;
 	top: 168px;
 	left: 240px;
+	resize: none;
+	width: 80%;
 
 	font-family: 'Inter', cursive;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 150%;
-	color: #0A3871;
+	
+
+	margin: 20px 10px 20px 0px;
 
 }
 
+.msgCripto::placeholder{
+	color: #0A3871;
+}
+
 /*Rectangle1*/
-#msgSaida{
+.msg{
 position: absolute;
 margin: 20px;
 width: 336px;
 height: 781px;
 left: 1032px;
 top: 72px;
+bottom: 130px;
+border: none;
+border-radius: 25px;
 
 /* White */
 
-background: #FFFFFF;
+background-image: url('src/imagens/img-pessoa-com-lupa.svg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: 300px;
+text-align: center;
 /* shadow */
 
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-border-radius: 25px;
+
 }
+
+/*.msg:focus{
+	outline: 0;
+}*/
 
 
 
@@ -145,8 +160,8 @@ border-radius: 25px;
 	color: white;
 	font-weight: bolder;
 	font-size: 18px;
-	border: none;
-	border-radius: 5px;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
 	transition: 1s all;
 	cursor: pointer;
 }
@@ -168,15 +183,13 @@ border-radius: 25px;
 	color: white;
 	font-weight: bolder;
 	font-size: 18px;
-	border: none;
-	border-radius: 5px;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
 	transition: 1s all;
 	cursor: pointer;
 }
 
-.input-text{
-	margin: 20px 10px 20px 0px;
-}
+
 
 div.buttons{
 	margin: 0 50% 0 0;
