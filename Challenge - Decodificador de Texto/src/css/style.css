@@ -2,12 +2,18 @@
 body{
 	font-family: 'Mukta', sans-serif;
 	background: #E5E5E5;
-	
+	padding: 10px 10px;
+	margin: 10px 10px;
 }
 
 .cabecalho-logo{
 	margin: 10px 10px 10px 10px;
 	padding: 10px 100px 60px 0;
+}
+
+.main{
+	padding: 10px 10px;
+	margin: 10px 10px;
 }
 
 header img{
@@ -80,7 +86,9 @@ label{
 
 .secaoTexto{
 	text-align: center;
-	display:inline;
+	display:block;
+	padding: 10px 10px;
+	margin: 15px 15px;
 	
 }
 
@@ -88,13 +96,14 @@ label{
 .msgCripto{
 	
 	border: none;
-	display:flex; 
-	width: 680px;
-	height: 288px;
+	display:block; 
+	width: 280px;
+	height: 300px;
 	top: 168px;
 	left: 240px;
 	resize: none;
-	width: 80%;
+	
+	width: 45%;
 
 	font-family: 'Inter', cursive;
 	font-style: normal;
@@ -102,12 +111,12 @@ label{
 	font-size: 32px;
 	line-height: 150%;
 	
-
-	margin: 20px 10px 20px 0px;
+	padding: 10px 0px 1px 0px;
+	margin: 10px 1px 10px 10px;
 
 }
 
-.msgCripto::placeholder{
+.msgCripto:placeholder{
 	color: #0A3871;
 }
 
@@ -121,8 +130,10 @@ left: 1032px;
 top: 72px;
 bottom: 130px;
 border: none;
-border-radius: 25px;
-
+resize: none;
+border-radius: 15px;
+bottom: 130px;
+padding: 30px;
 /* White */
 
 background-image: url('src/imagens/img-pessoa-com-lupa.svg');
@@ -132,13 +143,12 @@ background-size: 300px;
 text-align: center;
 /* shadow */
 
-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 
 }
 
-/*.msg:focus{
+.msg:focus{
 	outline: 0;
-}*/
+}
 
 
 
@@ -153,9 +163,8 @@ box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	display: inline;
 
 	width: 175px;
-	/* padding: 0.5% 0;*/ 
-	padding: 0.5% 0.5% 0.5% 0.5%;
-	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	margin: 25px 10px 10px 30px;
 	background: #526BC3;
 	color: white;
 	font-weight: bolder;
@@ -166,6 +175,7 @@ box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	cursor: pointer;
 }
 
+
 .decodificar{
 	text-align: center;
 	width: 343;
@@ -174,13 +184,11 @@ box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	left: 16px;
 	font-size: 20px;
 	display: inline;
-
 	width: 175px;
-	/* padding: 0.5% 0;*/ 
-	padding: 0.5% 0.5% 0.5% 0.5%;
-	margin: 10px 10px 10px 10px;
-	background: #526BC3;
-	color: white;
+	 
+	padding: 10px 10px 10px 10px;
+	margin: 25px 10px 10px 30px;
+	color: #526BC3;
 	font-weight: bolder;
 	font-size: 18px;
 	border: 1px solid #0A3871;
@@ -208,7 +216,7 @@ div button:hover{
 
 }
 
-.copiar{
+#copiar{
 	/* Button */
 
 
@@ -222,7 +230,7 @@ align-items: flex-start;
 padding: 24px;
 gap: 8px;
 padding: 20px 10px 10px 135px;
-margin: 25px 10px 10px 30px;
+margin: 25px 10px 10px 50px;
 
 position: absolute;
 width: 336px;
@@ -241,3 +249,4 @@ cursor: pointer;
 border: 1px solid #0A3871;
 border-radius: 24px;
 }
+
