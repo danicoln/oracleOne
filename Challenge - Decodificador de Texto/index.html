@@ -14,19 +14,20 @@
 	</head>
 
 	<body>
-		<main class="estilo-pagina">
+		<main class="main">
 			<section class="parte-esquerda">
 				<header>
 					<nav class="cabecalho-logo">
 						<img src="src/imagens/logoAlura.svg" alt="Logo da Alura">
 					</nav>
+					<!--
 					<div>
-						
+						 
 						<p><strong>Esta página se refere ao challenge proposto pelo Programa One.</strong></p> 
 
 						<p>Abaixo, você vai precisar inserir os dados a serem decodificados e clicar no botão "Decodificar" para descriptografar o texto!</p>
 					</div>
-
+					-->
 				</header>
 			</section>
 
@@ -59,8 +60,8 @@
 				<div>
 					<!-- <label for="msgSaida"> Insira o texto a ser descriptografado:</label> -->
 					
-					<textarea class="msg" cols="20%" rows="8%" id="msgSaida"> </textarea>
-					<button class="copiar" onclick="copiar()">Copiar</button>
+					<textarea class="msg" cols="20%" rows="7%"> </textarea>
+					<button id="copiar" onclick="copiar()">Copiar</button>
 					
 					<div class="texto-saida">
 						<h3>Não foi encontrada nenhuma mensagem, tente novamente</h3>
