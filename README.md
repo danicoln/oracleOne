@@ -1,4 +1,5 @@
-# Programa Oracle ONE T4
+
+<img src="https://raw.githubusercontent.com/danicoln/decodificador-alura/main/src/imagens/ONE_logo.png" alt="Logo da Oracle ONE">
 
 ![NPM](https://img.shields.io/badge/Status-em%20desenvolvimento-green)
 
@@ -30,8 +31,6 @@ Daniel Lincoln M. F. Silva
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lincolndeveloper/)
 
 e-mail: lincolndeveloper@outlook.com
-
-
 
 
 
