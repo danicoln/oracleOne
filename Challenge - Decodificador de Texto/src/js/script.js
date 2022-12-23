@@ -1,8 +1,8 @@
 
-		const inputText = document.querySelector('#msgCripto');
+		const inputText = document.querySelector('.msgCripto');
 		const msg = document.querySelector('.msg');
 		const textSaida = document.querySelector('.texto-saida');
-		const botaoCopiar = document.querySelector('#msgSaida');
+		const botaoCopiar = document.querySelector('#copiar');
 
 		
 
@@ -10,13 +10,14 @@
 		function buttonCriptografar(){
 			const textoEncriptado = encriptar(inputText.value);
 			if(textoEncriptado == ""){
-				alert("Por favor, insera o texto que será encriptado!");
+				alert("Por favor, insira o texto que será encriptado!");
 				return textoEncriptado;
 			}
 
 			msg.value = textoEncriptado;
-			textSaida.style.display = 'none';
-			msg.style.color="red";
+			msg.style.background="#FFFFFF"
+			msg.style.color="orange"
+			textSaida.style.display="none";
 			botaoCopiar.style.display='block';
 
 		}
@@ -64,12 +65,28 @@
 			return textDesencript;
 		}
 
-	
-		function copiar(){
-		
-			navigator.clipboard.writeText(msg);
-			
+		// função copiar
+		async function copiar() {
+			msg.select();
+		  try {
+		    await navigator.clipboard.writeText(msg.value);
+		    console.log('Page URL copied to clipboard');
+		  } catch (err) {
+		    console.error('Failed to copy: ', err);
+		  }
 		}
 
-
-		
+		// função para colar
+		async function getClipboardContents() {
+		  try {
+		    const clipboardItems = await navigator.clipboard.read();
+		    for (const clipboardItem of clipboardItems) {
+		      for (const type of clipboardItem.types) {
+		        const blob = await clipboardItem.getType(type);
+		        console.log(URL.createObjectURL(blob));
+		      }
+		    }
+		  } catch (err) {
+		    console.error(err.name, err.message);
+		  }
+		}
