@@ -7,7 +7,7 @@ body{
 }
 
 .cabecalho-logo{
-	margin: 10px 10px 10px 10px;
+	margin: 10px 50px 10px 10px;
 	padding: 10px 100px 60px 0;
 }
 
@@ -33,6 +33,11 @@ p strong{
 div p{
 	margin: 10px 10px;
 	padding: 10px 10px;
+}
+
+h2{
+	padding: 0px 0px 0px 100px;
+	margin: 0px 0px 0px 100px;
 }
 
 
@@ -113,20 +118,24 @@ label{
 	
 	padding: 10px 0px 1px 0px;
 	margin: 10px 1px 10px 10px;
-
+	background: #E5E5E5;
 }
 
-.msgCripto:placeholder{
+.msgCripto:focus {
+	outline: 0;
+}
+
+.msgCripto:placeholder {
 	color: #0A3871;
 }
 
 /*Rectangle1*/
-.msg{
+.msg {
 position: absolute;
 margin: 20px;
 width: 336px;
-height: 781px;
-left: 1032px;
+height: 751px;
+left: 940px;
 top: 72px;
 bottom: 130px;
 border: none;
@@ -134,26 +143,83 @@ resize: none;
 border-radius: 15px;
 bottom: 130px;
 padding: 30px;
+font-weight: bold;
 /* White */
 
-background-image: url('src/imagens/img-pessoa-com-lupa.svg');
+background-image: url("C:/Users/User/OneDrive/Área de Trabalho/Oracle One/Challenge - Decodificador de Texto/src/imagens/pessoa-com-lupa.png");
 background-repeat: no-repeat;
 background-position: center;
 background-size: 300px;
-text-align: center;
+
 /* shadow */
 
 
 }
 
-.msg:focus{
+.msg:focus {
 	outline: 0;
 }
 
+.texto-saida {
+	position: absolute;
+	margin: 10px 10px 10px 70px;
+	padding: 10px 10px 10px 70px;
+	text-align: center;
 
 
+}
 
-.codificar{
+.texto-saida h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.texto-saida p{
+	margin-top: 15px;
+	margin-left: 5px;
+}
+
+
+.redes-sociais {
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.redes-sociais i{
+	margin-left: 70px;
+}
+
+.footer{
+	background: #F2F7FF;
+	margin: 25% 0 0 0;
+	display: flex;
+
+}
+
+.footer span{
+	display: inline-block;
+	font-size: 15px;
+	font-style: italic;
+	color: black;
+
+}
+
+.fa-linkedin{
+	padding: 10px 10px 10px 550px;
+	font-size: 30px;
+}
+
+.fa-github{
+	padding: 10px 10px 10px 10px;
+	font-size: 30px;
+}
+
+.fa-instagram{
+	padding: 10px 10px 10px 10px;
+	font-size: 30px;
+}
+
+.codificar {
 	text-align: center;
 	width: 343;
 	height: 624;
@@ -209,13 +275,6 @@ div button:hover{
 }
 
 
-
-.footer{
-	background: #526BC3;
-	margin: 50% 0 0 0;
-
-}
-
 #copiar{
 	/* Button */
 
@@ -224,18 +283,17 @@ box-sizing: border-box;
 
 /* Auto layout */
 
-display: flex;
+display: none;
 flex-direction: row;
 align-items: flex-start;
 padding: 24px;
 gap: 8px;
-padding: 20px 10px 10px 135px;
 margin: 25px 10px 10px 50px;
 
 position: absolute;
 width: 336px;
 height: 67px;
-left: 1032px;
+left: 942px;
 top: 790px;
 
 text-align: center;
@@ -249,4 +307,3 @@ cursor: pointer;
 border: 1px solid #0A3871;
 border-radius: 24px;
 }
-
