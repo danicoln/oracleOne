@@ -5,9 +5,9 @@
 
 # Sobre o projeto
 
-Estou participando do programa Oracle ONE e aqui está um pouco das atividades e desafios. 
+Estou participando do programa Oracle ONE e aqui está um pouco das atividades e desafios do programa, como criar sites, usando HTML5 e CSS3 e ainda Javascript como backend. 
 
-Aqui está algumas atividades do programa, como criar sites, usando HTML5 e CSS3 e ainda Javascript como backend. 
+#challengeonedecodificador4
 
 # Tecnologias utilizadas
 ## Backend
